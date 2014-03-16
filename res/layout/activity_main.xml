@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center" 
+    android:padding="25dp"
+    >
+ <TextView 
+      	android:text="MIFARE  READER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:textIsSelectable="true"
+        /> 
+        
+ <Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="20dip"
+			android:background="@color/dark_red" />
+  
+  <Button
+        android:id="@+id/read_sector_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Read Sector"
+        android:layout_marginBottom="15dp"
+        android:padding="25dp"
+        android:textSize="25sp"
+        />
+  
+  <Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="20dip"
+			android:background="@color/dark_red" />
+  
+   <TextView 
+      	android:text="1. CHOOSE SECTOR"
+      	android:gravity="center_horizontal"
+      	android:textColor="@color/dark_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:layout_marginBottom="20dip"
+         /> 
+  
+  <TextView 
+      	android:text="Sector Number (2-15) :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="25sp"
+        /> 
+        
+  <EditText 
+      	android:inputType="number"
+      	android:id="@+id/sec_no"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:textSize="45dp"
+        />
+  
+   <Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="20dip"
+			android:background="@color/dark_red" />
+        
+        <TextView 
+      	android:text="2. AUTHENTICATION"
+      	android:gravity="center_horizontal"
+      	android:textColor="@color/dark_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:layout_marginBottom="20dip"
+         /> 
+        
+  <CheckBox
+        android:text="Use default key"
+        android:id="@+id/chkDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+         />
+  
+  <TextView 
+      	android:text="\n\nKeyA :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textSize="25sp"
+        /> 
+    
+  <EditText 
+      	android:inputType="text"
+      	android:id="@+id/keya"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:textSize="45dp"
+        />    
+        
+  <Button android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:layout_marginTop="20dip"
+			android:layout_marginBottom="20dip"
+			android:background="@color/dark_red" />
+        
+        <Button
+        android:id="@+id/read_tag_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Read Tag"
+        android:layout_marginBottom="15dp"
+        android:padding="25dp"
+        android:textSize="25sp"
+        />
+    
+    <TextView 
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        />
+        
+</LinearLayout>
+</ScrollView>
